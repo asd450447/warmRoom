@@ -1,0 +1,159 @@
+
+/* Class = "UILabel"; text = "温度"; ObjectID = "0MG-hu-27q"; */
+"0MG-hu-27q.text" = "温度";
+
+/* Class = "UILabel"; text = "光照"; ObjectID = "1aT-k4-g3X"; */
+"1aT-k4-g3X.text" = "光照";
+
+/* Class = "UILabel"; text = "庭院详细信息："; ObjectID = "3yT-HT-BNd"; */
+"3yT-HT-BNd.text" = "庭院详细信息：";
+
+/* Class = "UIButton"; normalTitle = "更新数据"; ObjectID = "4U5-lU-i0v"; */
+"4U5-lU-i0v.normalTitle" = "更新数据";
+
+/* Class = "UILabel"; text = "二氧化碳"; ObjectID = "6u2-y3-r2R"; */
+"6u2-y3-r2R.text" = "二氧化碳";
+
+/* Class = "UILabel"; text = "视频回放"; ObjectID = "ALj-Ji-W7Z"; */
+"ALj-Ji-W7Z.text" = "视频回放";
+
+/* Class = "UILabel"; text = "阳光房详细信息："; ObjectID = "Boy-6h-Ye5"; */
+"Boy-6h-Ye5.text" = "阳光房详细信息：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DkW-F2-AAn"; */
+"DkW-F2-AAn.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "更新数据"; ObjectID = "EKo-5P-CmQ"; */
+"EKo-5P-CmQ.normalTitle" = "更新数据";
+
+/* Class = "UILabel"; text = "光照"; ObjectID = "Fc2-dN-4kP"; */
+"Fc2-dN-4kP.text" = "光照";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GFe-1W-JN8"; */
+"GFe-1W-JN8.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "H2t-2o-h47"; */
+"H2t-2o-h47.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IVR-zX-geS"; */
+"IVR-zX-geS.text" = "Label";
+
+/* Class = "UILabel"; text = "土壤湿度"; ObjectID = "Ijj-GP-nHi"; */
+"Ijj-GP-nHi.text" = "土壤湿度";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JKk-S2-D7O"; */
+"JKk-S2-D7O.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JM7-Wy-G0g"; */
+"JM7-Wy-G0g.text" = "Label";
+
+/* Class = "UILabel"; text = "阳光房详细信息："; ObjectID = "Owy-es-1P2"; */
+"Owy-es-1P2.text" = "阳光房详细信息：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Po0-wW-DUm"; */
+"Po0-wW-DUm.text" = "Label";
+
+/* Class = "UILabel"; text = "说明：开启自动控制，选择适当温度，当温室中温度大于选择温度时，遮阳和风机相应开启；低于选择温度时，自动关闭。"; ObjectID = "Q9w-um-Otk"; */
+"Q9w-um-Otk.text" = "说明：开启自动控制，选择适当温度，当温室中温度大于选择温度时，遮阳和风机相应开启；低于选择温度时，自动关闭。";
+
+/* Class = "UIButton"; normalTitle = "温度选择"; ObjectID = "TaM-pF-so5"; */
+"TaM-pF-so5.normalTitle" = "温度选择";
+
+/* Class = "UILabel"; text = "温度"; ObjectID = "UGK-Na-BDW"; */
+"UGK-Na-BDW.text" = "温度";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VZq-Ba-PUy"; */
+"VZq-Ba-PUy.text" = "Label";
+
+/* Class = "UILabel"; text = "遮阳，风机"; ObjectID = "WEL-dv-pfP"; */
+"WEL-dv-pfP.text" = "遮阳，风机";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZW5-Jb-F2k"; */
+"ZW5-Jb-F2k.text" = "Label";
+
+/* Class = "UILabel"; text = "湿度"; ObjectID = "atk-dC-JZb"; */
+"atk-dC-JZb.text" = "湿度";
+
+/* Class = "UIButton"; normalTitle = "温度选择"; ObjectID = "bOF-EY-hUY"; */
+"bOF-EY-hUY.normalTitle" = "温度选择";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bQc-Ue-AgS"; */
+"bQc-Ue-AgS.text" = "Label";
+
+/* Class = "UILabel"; text = "风机"; ObjectID = "bTn-xn-Mzu"; */
+"bTn-xn-Mzu.text" = "风机";
+
+/* Class = "UILabel"; text = "二氧化碳"; ObjectID = "bm4-DD-jXD"; */
+"bm4-DD-jXD.text" = "二氧化碳";
+
+/* Class = "UILabel"; text = "远程浇灌"; ObjectID = "cMT-Rw-pkD"; */
+"cMT-Rw-pkD.text" = "远程浇灌";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "d1d-Wx-9KR"; */
+"d1d-Wx-9KR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dd3-Cf-1xp"; */
+"dd3-Cf-1xp.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "e54-IS-hnb"; */
+"e54-IS-hnb.text" = "Label";
+
+/* Class = "UILabel"; text = "手动控制："; ObjectID = "e5e-Q7-5Bi"; */
+"e5e-Q7-5Bi.text" = "手动控制：";
+
+/* Class = "UILabel"; text = "实时视屏"; ObjectID = "fAe-Lm-PPL"; */
+"fAe-Lm-PPL.text" = "实时视屏";
+
+/* Class = "UIButton"; normalTitle = "遮阳"; ObjectID = "gHT-pl-VVZ"; */
+"gHT-pl-VVZ.normalTitle" = "遮阳";
+
+/* Class = "UILabel"; text = "自动浇灌"; ObjectID = "gjW-lk-nMc"; */
+"gjW-lk-nMc.text" = "自动浇灌";
+
+/* Class = "UILabel"; text = "自动控制："; ObjectID = "h6R-b7-wXk"; */
+"h6R-b7-wXk.text" = "自动控制：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hE5-Sb-D6G"; */
+"hE5-Sb-D6G.text" = "Label";
+
+/* Class = "UILabel"; text = "土壤湿度"; ObjectID = "ios-jN-5oU"; */
+"ios-jN-5oU.text" = "土壤湿度";
+
+/* Class = "UILabel"; text = "空气湿度"; ObjectID = "ivH-P7-hZT"; */
+"ivH-P7-hZT.text" = "空气湿度";
+
+/* Class = "UILabel"; text = "数据来源：庭院宝"; ObjectID = "jGB-yw-XQ9"; */
+"jGB-yw-XQ9.text" = "数据来源：庭院宝";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jdf-TY-qlW"; */
+"jdf-TY-qlW.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lKe-Pk-vMt"; */
+"lKe-Pk-vMt.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lu8-dt-oFv"; */
+"lu8-dt-oFv.text" = "Label";
+
+/* Class = "UILabel"; text = "天气"; ObjectID = "mKT-La-pIH"; */
+"mKT-La-pIH.text" = "天气";
+
+/* Class = "UILabel"; text = "湿度"; ObjectID = "nbe-z6-H56"; */
+"nbe-z6-H56.text" = "湿度";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tjR-fB-itc"; */
+"tjR-fB-itc.text" = "Label";
+
+/* Class = "UILabel"; text = "温度"; ObjectID = "uVT-Xc-pNd"; */
+"uVT-Xc-pNd.text" = "温度";
+
+/* Class = "UILabel"; text = "土壤湿度"; ObjectID = "xSf-b8-Q7r"; */
+"xSf-b8-Q7r.text" = "土壤湿度";
+
+/* Class = "UILabel"; text = "所在地"; ObjectID = "xg4-Ut-2wP"; */
+"xg4-Ut-2wP.text" = "所在地";
+
+/* Class = "UINavigationItem"; title = "lalala"; ObjectID = "zSA-ql-n9K"; */
+"zSA-ql-n9K.title" = "lalala";
+
+/* Class = "UIButton"; normalTitle = "风机"; ObjectID = "zZ5-aJ-H64"; */
+"zZ5-aJ-H64.normalTitle" = "风机";

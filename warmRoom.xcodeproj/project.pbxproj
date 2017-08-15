@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4DD4781F20966C00967FA3 /* warmTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DD4771F20966C00967FA3 /* warmTableViewController.m */; };
+		3A4DD47B1F2187D600967FA3 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DD47A1F2187D600967FA3 /* testViewController.m */; };
 		3AB4E1FD1EFBA8D600F55822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E1FC1EFBA8D600F55822 /* main.m */; };
 		3AB4E2001EFBA8D600F55822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E1FF1EFBA8D600F55822 /* AppDelegate.m */; };
 		3AB4E2031EFBA8D600F55822 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E2021EFBA8D600F55822 /* ViewController.m */; };
 		3AB4E2061EFBA8D600F55822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4E2041EFBA8D600F55822 /* Main.storyboard */; };
 		3AB4E2081EFBA8D600F55822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4E2071EFBA8D600F55822 /* Assets.xcassets */; };
 		3AB4E20B1EFBA8D600F55822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4E2091EFBA8D600F55822 /* LaunchScreen.storyboard */; };
+		3AB4E2141EFBAC8C00F55822 /* openfileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4E2131EFBAC8C00F55822 /* openfileRequest.m */; };
+		3AB4E2161EFBB04500F55822 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4E2151EFBB04500F55822 /* Podfile */; };
+		9246C1D157655DC611E54466 /* Pods_warmRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29FDD3CB2F630B3F9DD1586 /* Pods_warmRoom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A4DD4761F20966C00967FA3 /* warmTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warmTableViewController.h; sourceTree = "<group>"; };
+		3A4DD4771F20966C00967FA3 /* warmTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = warmTableViewController.m; sourceTree = "<group>"; };
+		3A4DD4791F2187D600967FA3 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		3A4DD47A1F2187D600967FA3 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		3A4DD47C1F223C5400967FA3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3A4DD47D1F223C5400967FA3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3AB4E1F81EFBA8D600F55822 /* warmRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = warmRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB4E1FC1EFBA8D600F55822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AB4E1FE1EFBA8D600F55822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +37,12 @@
 		3AB4E2071EFBA8D600F55822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AB4E20A1EFBA8D600F55822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AB4E20C1EFBA8D600F55822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB4E2121EFBAC8C00F55822 /* openfileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openfileRequest.h; sourceTree = "<group>"; };
+		3AB4E2131EFBAC8C00F55822 /* openfileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openfileRequest.m; sourceTree = "<group>"; };
+		3AB4E2151EFBB04500F55822 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		87A8CD5AE0A81764B6638585 /* Pods-warmRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warmRoom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warmRoom/Pods-warmRoom.debug.xcconfig"; sourceTree = "<group>"; };
+		C29FDD3CB2F630B3F9DD1586 /* Pods_warmRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warmRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ADFA8E5B2B907247DA376E /* Pods-warmRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warmRoom.release.xcconfig"; path = "Pods/Target Support Files/Pods-warmRoom/Pods-warmRoom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9246C1D157655DC611E54466 /* Pods_warmRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28FD6BC97B5769E59AF88BA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29FDD3CB2F630B3F9DD1586 /* Pods_warmRoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AB4E1EF1EFBA8D600F55822 = {
 			isa = PBXGroup;
 			children = (
+				3AB4E2151EFBB04500F55822 /* Podfile */,
 				3AB4E1FA1EFBA8D600F55822 /* warmRoom */,
 				3AB4E1F91EFBA8D600F55822 /* Products */,
+				9F368529D57123979A1FA511 /* Pods */,
+				28FD6BC97B5769E59AF88BA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +96,10 @@
 				3AB4E2091EFBA8D600F55822 /* LaunchScreen.storyboard */,
 				3AB4E20C1EFBA8D600F55822 /* Info.plist */,
 				3AB4E1FB1EFBA8D600F55822 /* Supporting Files */,
+				3A4DD4761F20966C00967FA3 /* warmTableViewController.h */,
+				3A4DD4771F20966C00967FA3 /* warmTableViewController.m */,
+				3A4DD4791F2187D600967FA3 /* testViewController.h */,
+				3A4DD47A1F2187D600967FA3 /* testViewController.m */,
 			);
 			path = warmRoom;
 			sourceTree = "<group>";
@@ -74,9 +107,20 @@
 		3AB4E1FB1EFBA8D600F55822 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AB4E2121EFBAC8C00F55822 /* openfileRequest.h */,
+				3AB4E2131EFBAC8C00F55822 /* openfileRequest.m */,
 				3AB4E1FC1EFBA8D600F55822 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F368529D57123979A1FA511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A8CD5AE0A81764B6638585 /* Pods-warmRoom.debug.xcconfig */,
+				C9ADFA8E5B2B907247DA376E /* Pods-warmRoom.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB4E20F1EFBA8D600F55822 /* Build configuration list for PBXNativeTarget "warmRoom" */;
 			buildPhases = (
+				C330102D345835061C4BE661 /* [CP] Check Pods Manifest.lock */,
 				3AB4E1F41EFBA8D600F55822 /* Sources */,
 				3AB4E1F51EFBA8D600F55822 /* Frameworks */,
 				3AB4E1F61EFBA8D600F55822 /* Resources */,
+				640A8C0486327975F6C61075 /* [CP] Embed Pods Frameworks */,
+				E3E28E71D590C53ADA3C102D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +158,7 @@
 					3AB4E1F71EFBA8D600F55822 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JFCNF887RU;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,20 +188,72 @@
 			files = (
 				3AB4E20B1EFBA8D600F55822 /* LaunchScreen.storyboard in Resources */,
 				3AB4E2081EFBA8D600F55822 /* Assets.xcassets in Resources */,
+				3AB4E2161EFBB04500F55822 /* Podfile in Resources */,
 				3AB4E2061EFBA8D600F55822 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		640A8C0486327975F6C61075 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warmRoom/Pods-warmRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C330102D345835061C4BE661 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E28E71D590C53ADA3C102D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warmRoom/Pods-warmRoom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AB4E1F41EFBA8D600F55822 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4DD47B1F2187D600967FA3 /* testViewController.m in Sources */,
 				3AB4E2031EFBA8D600F55822 /* ViewController.m in Sources */,
+				3A4DD4781F20966C00967FA3 /* warmTableViewController.m in Sources */,
 				3AB4E2001EFBA8D600F55822 /* AppDelegate.m in Sources */,
 				3AB4E1FD1EFBA8D600F55822 /* main.m in Sources */,
+				3AB4E2141EFBAC8C00F55822 /* openfileRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +264,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3AB4E2051EFBA8D600F55822 /* Base */,
+				3A4DD47C1F223C5400967FA3 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -172,6 +273,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3AB4E20A1EFBA8D600F55822 /* Base */,
+				3A4DD47D1F223C5400967FA3 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -183,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -232,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -273,25 +377,31 @@
 		};
 		3AB4E2101EFBA8D600F55822 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A8CD5AE0A81764B6638585 /* Pods-warmRoom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFCNF887RU;
 				INFOPLIST_FILE = warmRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemao.warmRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3AB4E2111EFBA8D600F55822 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9ADFA8E5B2B907247DA376E /* Pods-warmRoom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFCNF887RU;
 				INFOPLIST_FILE = warmRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemao.warmRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -314,6 +424,7 @@
 				3AB4E2111EFBA8D600F55822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
