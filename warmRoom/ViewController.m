@@ -96,7 +96,7 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"停止" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [DKProgressHUD showLoading];
         _judge = @"Manual#3,2";
-//        [[openfileRequest sharedNewtWorkTool]sendMessage:@"Manual#3,2" Mac:_mac];
+        [[openfileRequest sharedNewtWorkTool]sendMessage:@"Manual#3,2" Mac:_mac];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
     }]];
@@ -106,14 +106,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    乡下阳光房Mac
     _mac = @"F0FE6B4B4E84";
-//    _mac = @"accf234b88f2";
+//    测试版
+//    _mac = @"ACCF234B88F2";
     _i = 0;
     [DKProgressHUD showLoadingToView:self.view];
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     [def setObject:@"18852866235" forKey:@"userName"];
     [def setObject:@"123456" forKey:@"passWord"];
     [def synchronize];
+    
+    [_autoZheyang setTitle:@"请选择" forState:UIControlStateNormal];
+    _zheyangLable.text = @"遮阳，风机/土壤湿度";
     
     [_refrushBtn.layer setBorderColor:[UIColor whiteColor].CGColor];
     [_refrushBtn.layer setBorderWidth:1];
@@ -134,8 +139,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             _zheyangLable.hidden = false;
             _autoZheyang.hidden = false;
-            _soilHum.hidden = false;
-            _autoFengji.hidden = false;
+//            _soilHum.hidden = false;
+//            _autoFengji.hidden = false;
             _lable1.hidden = NO;
             _lable2.hidden = NO;
         });
@@ -143,10 +148,11 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             _zheyangLable.hidden = YES;
             _autoZheyang.hidden = YES;
-            _soilHum.hidden = YES;
-            _autoFengji.hidden = YES;
+//            _soilHum.hidden = YES;
+//            _autoFengji.hidden = YES;
             _lable1.hidden = YES;
             _lable2.hidden = YES;
+            [_autoZheyang setTitle:@"请选择" forState:UIControlStateNormal];
             _judge = @"Autorunclose";
             [[openfileRequest sharedNewtWorkTool]sendMessage:@"Runclose" Mac:_mac];
         });
@@ -156,34 +162,61 @@
 //自动控制遮阳温度
 - (IBAction)zheyangClick:(id)sender {
     _judge = @"OpenAutoRun";
-    NSArray *percente = [NSArray arrayWithObjects:@"20",@"25", @"30",@"35",@"40",@"45", nil];
-    [ActionSheetStringPicker showPickerWithTitle:@"选择温度℃"
-                                            rows:percente
-                                initialSelection:0
-                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
-                                           [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@",selectedValue,@"℃"] forState:UIControlStateNormal];
-                                           [[openfileRequest sharedNewtWorkTool]sendMessage:[NSString stringWithFormat:@"Autorun#%@",selectedValue] Mac:_mac];
-                                       }
-                                     cancelBlock:^(ActionSheetStringPicker *picker) {
-                                         NSLog(@"Block Picker Canceled");
-                                     }
-                                          origin:sender];
+//    NSArray *percente = [NSArray arrayWithObjects:@"20",@"25", @"30",@"35",@"40",@"45", nil];
+//    [ActionSheetStringPicker showPickerWithTitle:@"选择温度℃"
+//                                            rows:percente
+//                                initialSelection:0
+//                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+//                                           [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@",selectedValue,@"℃"] forState:UIControlStateNormal];
+//                                           [[openfileRequest sharedNewtWorkTool]sendMessage:[NSString stringWithFormat:@"Autorun#%@",selectedValue] Mac:_mac];
+//                                       }
+//                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+//                                         NSLog(@"Block Picker Canceled");
+//                                     }
+//                                          origin:sender];
+    
+    
+    NSArray *rows = @[@[@"20℃",@"25℃", @"30℃",@"35℃",@"40℃",@"45℃"],@[@"60%",@"65%",@"70%",@"75%",@"80%",@"85%"]];
+    NSArray *selection = @[@2,@2];
+    
+    [ActionSheetMultipleStringPicker showPickerWithTitle:@"选择温度／湿度" rows:rows initialSelection:selection doneBlock:^(ActionSheetMultipleStringPicker *picker, NSArray *selectedIndexes, id selectedValues) {
+        
+        //        NSLog(@"%@",selectedIndexes);
+        //        NSLog(@"%@",[selectedValues componentsJoinedByString:@","]);
+        NSString *data = [selectedValues componentsJoinedByString:@","];
+        NSArray *arr =[data componentsSeparatedByString:@","];
+        [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@%@",arr[0],@"/",arr[1]] forState:UIControlStateNormal];
+        NSLog(@"%@", data);
+        data = [NSString stringWithFormat:@"%@%@%@",[arr[0] substringToIndex:2],@",",[arr[1] substringToIndex:2]];
+        NSLog(@"%@", data);
+        [[openfileRequest sharedNewtWorkTool]sendMessage:[NSString stringWithFormat:@"Autorun#%@",data] Mac:_mac];
+        
+    } cancelBlock:^(ActionSheetMultipleStringPicker *picker) {
+        
+        NSLog(@"Block Picker Canceled");
+        
+    } origin:(UIView *)sender];
 }
+
 //自动控制风机温度
 - (IBAction)fengjiClick:(id)sender {
-    _judge = @"OpenAutoRun";
-    NSArray *percente = [NSArray arrayWithObjects:@"20",@"25", @"30",@"35",@"40",@"45", nil];
-    [ActionSheetStringPicker showPickerWithTitle:@"选择湿度%"
-                                            rows:percente
-                                initialSelection:0
-                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
-                                           [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@",selectedValue,@"%"] forState:UIControlStateNormal];
-                                           [[openfileRequest sharedNewtWorkTool]sendMessage:[NSString stringWithFormat:@"Autorun#%@",selectedValue] Mac:_mac];
-                                       }
-                                     cancelBlock:^(ActionSheetStringPicker *picker) {
-                                         NSLog(@"Block Picker Canceled");
-                                     }
-                                          origin:sender];
+    NSArray *rows = @[@[@"20",@"25", @"30",@"35",@"40",@"45"],@[@"60",@"65",@"70",@"75",@"80",@"85"]];
+    NSArray *selection = @[@2,@2];
+    
+    [ActionSheetMultipleStringPicker showPickerWithTitle:@"选择温度／湿度" rows:rows initialSelection:selection doneBlock:^(ActionSheetMultipleStringPicker *picker, NSArray *selectedIndexes, id selectedValues) {
+        
+//        NSLog(@"%@",selectedIndexes);
+//        NSLog(@"%@",[selectedValues componentsJoinedByString:@","]);
+        NSString *data = [selectedValues componentsJoinedByString:@","];
+        NSArray *arr =[data componentsSeparatedByString:@","];
+        [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@%@%@%@",arr[0],@"℃",@"/",arr[1],@"%"] forState:UIControlStateNormal];
+        [[openfileRequest sharedNewtWorkTool]sendMessage:[NSString stringWithFormat:@"Autorun#%@",data] Mac:_mac];
+        
+    } cancelBlock:^(ActionSheetMultipleStringPicker *picker) {
+        
+        NSLog(@"Block Picker Canceled");
+
+    } origin:(UIView *)sender];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -202,26 +235,29 @@
     if ([_judge isEqualToString:@"refrush"]) {
         NSArray *arr = [mes componentsSeparatedByString:@","];
         NSLog(@"%@", arr);
-        if (arr.count >6) {
+        if (arr.count >7) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 _sunLable.text = [NSString stringWithFormat:@"%@%@",arr[1],@"lux"];
                 _tempLable.text = [NSString stringWithFormat:@"%@%@",arr[2],@"℃"];
                 _humLable.text = [NSString stringWithFormat:@"%@%@",arr[3],@"%"];
                 _soildHumLable.text = [NSString stringWithFormat:@"%@%@",arr[0],@"%"];
                 _co2Lable.text = [NSString stringWithFormat:@"%@%@",arr[4],@""];
-                if ([arr[6] isEqualToString:@"0"]) {
+                if ([arr[7] isEqualToString:@"0"]) {
                     _autoSwitch.on = false;
                     _autoZheyang.hidden = YES;
+//                    _autoFengji.hidden = YES;
                     _lable1.hidden = YES;
                     _lable2.hidden = YES;
                     _zheyangLable.hidden = YES;
+//                    _soilHum.hidden = YES;
                 }else{
                     _autoSwitch.on = YES;
                     _autoZheyang.hidden = NO;
                     _lable1.hidden = NO;
                     _lable2.hidden = NO;
                     _zheyangLable.hidden = NO;
-                    [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@",arr[5],@"℃"] forState:UIControlStateNormal];
+//                    [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@",arr[5],@"℃"] forState:UIControlStateNormal];
+                    [_autoZheyang setTitle:[NSString stringWithFormat:@"%@%@%@%@%@",arr[5],@"℃",@"/",arr[6],@"%"] forState:UIControlStateNormal];
                 }
                 if (_i == 0) {
                     [self getWeather];
@@ -271,7 +307,7 @@
             if ([mes isEqualToString:@"zheyang close"]) {
                 [DKProgressHUD showInfoWithStatus:@"遮阳已关闭" toView:self.view];
             }else{
-                [DKProgressHUD showSuccessWithStatus:@"遮阳关闭成功" toView:self.view];
+//                [DKProgressHUD showSuccessWithStatus:@"遮阳关闭" toView:self.view];
             }
         });
     }
@@ -281,8 +317,14 @@
             if ([mes isEqualToString:@"zheyang open"]) {
                 [DKProgressHUD showInfoWithStatus:@"遮阳已开启" toView:self.view];
             }else{
-                [DKProgressHUD showSuccessWithStatus:@"遮阳开启成功" toView:self.view];
+                [DKProgressHUD showSuccessWithStatus:@"遮阳开启" toView:self.view];
             }
+        });
+    }
+    if ([_judge isEqualToString:@"Manual#3,2"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [DKProgressHUD dismiss];
+            [DKProgressHUD showSuccessWithStatus:@"遮阳停止" toView:self.view];
         });
     }
     if ([_judge isEqualToString:@"Autorunclose"]) {

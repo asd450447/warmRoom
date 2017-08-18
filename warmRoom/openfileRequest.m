@@ -108,7 +108,10 @@
     [_xmppRoster activate:_xmppStream];
     [_xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
     [_xmppStream sendElement:presence];
+//    乡下阳光房Mac
     [self sendMessage:@"GETALL" Mac:@"F0FE6B4B4E84"];
+//    测试版
+//    [self sendMessage:@"GETALL" Mac:@"ACCF234B88F2"];
 //    [[NSNotificationCenter defaultCenter]postNotificationName:@"openfileOnline" object:self ];
 }
 
