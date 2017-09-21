@@ -54,7 +54,7 @@
 //手动浇灌
 - (IBAction)waterClick:(id)sender {
     _judge = @"Manual#4";
-    NSArray *percente = [NSArray arrayWithObjects:@"开启",@"关闭",@"1",@"5",@"10",@"15", nil];
+    NSArray *percente = [NSArray arrayWithObjects:@"1",@"5",@"10",@"15",@"关闭", nil];
     [ActionSheetStringPicker showPickerWithTitle:@"选择浇灌时间"
                                             rows:percente
                                 initialSelection:0
@@ -120,12 +120,12 @@
     [_autoZheyang setTitle:@"请选择" forState:UIControlStateNormal];
     _zheyangLable.text = @"遮阳，风机/土壤湿度";
     
-    [_refrushBtn.layer setBorderColor:[UIColor whiteColor].CGColor];
-    [_refrushBtn.layer setBorderWidth:1];
-    [_refrushBtn.layer setMasksToBounds:YES];
-    _refrushBtn.layer.cornerRadius = 5.0f;
-    _refrushBtn.layer.masksToBounds = YES;
-    [_refrushBtn setTitle:@"点击刷新" forState:UIControlStateNormal];
+//    [_refrushBtn.layer setBorderColor:[UIColor whiteColor].CGColor];
+//    [_refrushBtn.layer setBorderWidth:1];
+//    [_refrushBtn.layer setMasksToBounds:YES];
+//    _refrushBtn.layer.cornerRadius = 5.0f;
+//    _refrushBtn.layer.masksToBounds = YES;
+//    [_refrushBtn setTitle:@"点击刷新" forState:UIControlStateNormal];
     
     [[openfileRequest sharedNewtWorkTool]connectToHost];
     _judge = @"refrush";
@@ -242,6 +242,7 @@
                 _humLable.text = [NSString stringWithFormat:@"%@%@",arr[3],@"%"];
                 _soildHumLable.text = [NSString stringWithFormat:@"%@%@",arr[0],@"%"];
                 _co2Lable.text = [NSString stringWithFormat:@"%@%@",arr[4],@""];
+                _waterLevel.text = [NSString stringWithFormat:@"%@%@",arr[8],@"cm"];
                 if ([arr[7] isEqualToString:@"0"]) {
                     _autoSwitch.on = false;
                     _autoZheyang.hidden = YES;
@@ -307,7 +308,7 @@
             if ([mes isEqualToString:@"zheyang close"]) {
                 [DKProgressHUD showInfoWithStatus:@"遮阳已关闭" toView:self.view];
             }else{
-//                [DKProgressHUD showSuccessWithStatus:@"遮阳关闭" toView:self.view];
+                [DKProgressHUD showSuccessWithStatus:@"遮阳关闭" toView:self.view];
             }
         });
     }

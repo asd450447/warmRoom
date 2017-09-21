@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempLable;
 @property (weak, nonatomic) IBOutlet UILabel *humLable;
 @property (weak, nonatomic) IBOutlet UILabel *soildHumLable;
+@property (weak, nonatomic) IBOutlet UILabel *waterLevel;
+
 @property NSString *weather;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImage;
 @property (weak, nonatomic) IBOutlet UIButton *downTemp;
